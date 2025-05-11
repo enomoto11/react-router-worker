@@ -60,6 +60,9 @@ pnpm run build
 
 Deployment is done using the Wrangler CLI.
 
+**Production URL:**
+https://my-react-router-app.enomotoforprivate.workers.dev/
+
 To build and deploy directly to production:
 
 ```sh
