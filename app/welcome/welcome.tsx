@@ -62,6 +62,11 @@ export function Welcome({ message, serverTime, userAgent }: { message: string; s
 
 const resources = [
   {
+    href: "/slow",
+    text: "SSR遅延モックページ (2秒ディレイ)",
+    icon: null,
+  },
+  {
     href: "https://reactrouter.com/docs",
     text: "React Router Docs",
     icon: (
