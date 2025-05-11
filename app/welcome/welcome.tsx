@@ -1,7 +1,7 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
-export function Welcome({ message, serverTime }: { message: string; serverTime?: string }) {
+export function Welcome({ message, serverTime, userAgent }: { message: string; serverTime?: string; userAgent?: string }) {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
@@ -44,6 +44,14 @@ export function Welcome({ message, serverTime }: { message: string; serverTime?:
                   <strong>Server Time (SSR):</strong> {serverTime}
                 </li>
               )}
+              {userAgent && (
+                <li className="self-stretch p-3 leading-normal">
+                  <strong>User-Agent (SSR):</strong> {userAgent}
+                </li>
+              )}
+              <li className="self-stretch p-3 leading-normal text-green-700 font-bold">
+                ✅ This page was server-side rendered!
+              </li>
             </ul>
           </nav>
         </div>
