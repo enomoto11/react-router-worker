@@ -14,12 +14,20 @@ A modern, production-ready template for building full-stack React applications u
 
 ## Getting Started
 
-### Installation
+### Package Manager
 
-Install the dependencies:
+This project uses [pnpm](https://pnpm.io/) as the package manager. If you don't have pnpm installed, install it globally first:
 
 ```bash
-npm install
+npm install -g pnpm
+```
+
+### Installation
+
+Install dependencies:
+
+```bash
+pnpm install
 ```
 
 ### Development
@@ -27,7 +35,7 @@ npm install
 Start the development server with HMR:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
@@ -37,7 +45,7 @@ Your application will be available at `http://localhost:5173`.
 Preview the production build locally:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 ## Building for Production
@@ -45,7 +53,7 @@ npm run preview
 Create a production build:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## Deployment
@@ -55,7 +63,7 @@ Deployment is done using the Wrangler CLI.
 To build and deploy directly to production:
 
 ```sh
-npm run deploy
+pnpm run deploy
 ```
 
 To deploy a preview URL:
